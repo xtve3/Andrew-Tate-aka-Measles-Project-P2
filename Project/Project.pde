@@ -1,10 +1,15 @@
 //Global Variables
+int appWidth, appHeight;
 //
 void setup() {
   //Display & Orientation
   size (1000,800);
+  displayOrientation();
+  appWidth = width;
+  appHeight = height;
+  //
   //Population
-  //Theme: i.e. Face
+  //Theme: i.e. Face (will work in portrait and landscape)
   //Background Image (could be in draw too)
 }//End setup
 //
@@ -14,7 +19,7 @@ void draw() {
   circle (300, 200, 200);
   circle (600, 200, 200);
   circle (500, 400, 200);
-  rect (450, 600, 250, 20);
+  rect (250, 550, 500, 150);
   //Start Button
   //Theme: andrew tate with different sizes and colours
   }//End draw
