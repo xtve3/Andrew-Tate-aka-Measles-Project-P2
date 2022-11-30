@@ -13,9 +13,9 @@ void population() {
   eyesX = appWidth * 1/4;
   eyesY = appHeight * 1/3;
   eyesDiameter = appHeight * 1/4;
-  eyesSecondX = ;
-  eyeSecondY = ;
-  eyesSecondDiameter = ; 
+  eyesSecondX = appWidth * 3/4;
+  eyeSecondY = appHeight * 1/3;
+  eyesSecondDiameter = appHeight * 1/4; 
   //
   //
 } //End population
