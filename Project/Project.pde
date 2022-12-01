@@ -1,6 +1,9 @@
 //Global Variables
 int appWidth, appHeight;
+int reset=1;
 PImage pic;
+color resetWhite=#FFFFFF;
+Boolean nightMode=false; //Basic night mode only changes measles
 //
 void setup() {
   //Display & Orientation
@@ -11,6 +14,7 @@ void setup() {
   //
   //Population
   population();
+     faceSetup();
   //Theme: i.e. Face (will work in portrait and landscape)
 
   //Background Image (could be in draw too)
@@ -19,9 +23,9 @@ void setup() {
 void draw() {
   //OS System Button
   //Start Button
-  //Theme: andrew tate with different sizes and colours
-     andrewTate(); 
-  faceSetup();
+  //Theme: andrew tate with different sizes and colours    
+  andrewTate(); 
+
   eyes();
   nose();
   mouth();
@@ -29,6 +33,8 @@ void draw() {
 //
 void keyPressed() {
   //KeyBoard Shortcuts
+  if (key=='Q' | key=='q') {if (nightMode==false) {nightMode=true;} else {nightMode=false;}} 
+  println("nightMode =", nightMode);
 }//End keyPressed
 //
 void mousePressed() {

@@ -1,20 +1,25 @@
 float measlesX, measlesY, measlesDiameter;
-color red=#E32117;
-//
-void andrewTate() {
-  
+color measlesColour;
+  //
+  void andrewTate() {
+  //
   //population code
-  int measlesRadius=int (measlesDiameter) * 1/2;
-  measlesDiameter = 30;
-  measlesX = random(rectFaceX+measlesRadius,(rectFaceX+rectFaceWidth)-measlesRadius ) ;
- 
+  measlesDiameter=random(appHeight * 1/100, appHeight * 1/30);
+  int measlesRadius = int (measlesDiameter) * 1/2;
+  measlesX = random(rectFaceX+measlesRadius, (rectFaceX+rectFaceWidth)-measlesRadius ) ;
   measlesY = random(appHeight);
-  fill(red);
-
-  
-  
+  //nightMode = true; //will change with keyboard and mousePressed
+  measlesColour = (nightMode==true) ? color (255, random(0,55), random(0) ) : color (255, random(0,55), random(10000) ) ;
+    image(pic, measlesX, measlesY);
+  //measlesColour = color (255, random(0,55), random(100) );
+  //most pink is range of blue 0-130 (i.e. 254, 44, 84)
+  //most red is range of green 0-55
+  //
+   noStroke();
+   fill(measlesColour);
    ellipse(measlesX, measlesY, measlesDiameter, measlesDiameter);
-   
+   fill(resetWhite); //resetWhite = #FFFFFF;
+   stroke(reset);
 }//End andrewTate
 //
 //end andrewTate subprogram
