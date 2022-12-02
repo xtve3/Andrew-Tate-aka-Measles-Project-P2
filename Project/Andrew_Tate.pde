@@ -20,6 +20,9 @@ color measlesColour;
    ellipse(measlesX, measlesY, measlesDiameter, measlesDiameter);
    fill(resetWhite); //resetWhite = #FFFFFF;
    stroke(reset);
+   //
+   disableMeasles = false;
+   if (disableMeasles==true) {measlesX = 1000000000; measlesY = 1000000000;}
 }//End andrewTate
 //
 //end andrewTate subprogram

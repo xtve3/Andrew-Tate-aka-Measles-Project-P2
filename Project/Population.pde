@@ -33,6 +33,13 @@ void population() {
   triangleSecondY = appHeight * 1.75/3;
   triangleThirdX = appWidth * 2/3;
   triangleThirdY = appHeight * 1.75/3;
+  //
+  helpPlsX = appWidth * 1/3 ;
+  helpPlsY = appHeight * 1/30;
+  helpPlsWidth = appWidth * 1/3;
+  helpPlsHeight = appHeight * 1/5;
+  helpPlsFontSize = 35;
+  //
 } //End population
 //
 //end population subprogram
