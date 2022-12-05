@@ -38,7 +38,12 @@ void population() {
   helpPlsY = appHeight * 1/30;
   helpPlsWidth = appWidth * 1/3;
   helpPlsHeight = appHeight * 1/5;
-  helpPlsFontSize = 35;
+  helpPlsFontSize = 15;
+  //
+  EnDITALLX = appWidth * 1/3;
+  EnDITALLY = appHeight * 5/30;
+  EnDITALLWidth = appWidth * 1/3;
+  EnDITALLHeight = appHeight * 1/5;
   //
 } //End population
 //

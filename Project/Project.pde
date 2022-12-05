@@ -1,9 +1,10 @@
 //Global Variables
 int appWidth, appHeight;
 int reset=1;
+PFont FontI;
 PImage pic;
 color resetWhite=#FFFFFF;
-Boolean nightMode=false,disableMeasles; //Basic night mode only changes measles
+Boolean nightMode=false; //Basic night mode only changes measles
 //
 void setup() {
   //Display & Orientation
@@ -11,6 +12,7 @@ void setup() {
   displayOrientation();
   appWidth = width;
   appHeight = height;
+  FontI = createFont("Arial Bold", 30);
   //
   //Population
   population();
@@ -34,13 +36,18 @@ void draw() {
    textSize(helpPlsFontSize);
    fill(textColor);
    text(helpPls, helpPlsX, helpPlsY, helpPlsWidth, helpPlsHeight);
+   textFont(FontI);
+   fill(EndItAllColor);
+   text(EndITALL, EnDITALLX, EnDITALLY, EnDITALLWidth, EnDITALLHeight);
   }//End draw
 //
 void keyPressed() {
   //KeyBoard Shortcuts
   if (key=='Q' | key=='q') {if (nightMode==false) {nightMode=true;} else {nightMode=false;}} 
   println("nightMode =", nightMode);
-  if (key=='P' | key=='p') {disableMeasles=true;};
+  //
+  if (key==CODED && keyCode==ESC) exit();
+  //
 }//End keyPressed
 //
 void mousePressed() {
