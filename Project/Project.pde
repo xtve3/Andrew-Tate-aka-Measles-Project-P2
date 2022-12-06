@@ -5,7 +5,7 @@ int tintFirstMode=255, tintFirstModeOpacity=1000;
 int tintRed=255, tintGreen=105, tintBlue=100, tintSecondModeOpacity=1000;
 float randomPicture, randomPictureII;
 PFont FontI;
-PImage pic, picII;
+PImage pic, picII, picIII;
 color resetWhite=#FFFFFF;
 Boolean nightMode=false, tintMode=false; //Basic night mode only changes measles
 //
@@ -17,7 +17,7 @@ void setup() {
   appHeight = height;
   FontI = createFont("Arial Bold", 30);
   //
-
+  
   //Population
   population();
      faceSetup();
@@ -73,7 +73,7 @@ void mousePressed() {
     tintMode = true;
     rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight );
     tint(tintRed, tintGreen, tintBlue, tintSecondModeOpacity); //RGB: Night Mode
-    image(picII, rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
+    image(picIII, rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
   //Start Button
   //Quit Button
   //Night Mode

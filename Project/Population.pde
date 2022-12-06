@@ -3,8 +3,9 @@ void population() {
   float centerX = appWidth * 1/2;
   float centerY = appHeight * 1/2;
   //
-  pic = loadImage("../Images used/220824-andrew-tate-snip-ac-715p-87eb7e.jpg");
+  pic = loadImage("../Images used/3880-andrewtate.png");
   picII = loadImage("../Images used/1589861000Andrew_Tate.jpg");
+  picIII = loadImage("../Images used/andrew-tate-cigar-708x398.jpg");
   //
   rectFaceX =centerX - appHeight * 1/2 ;
   rectFaceY = appHeight * 0 ;
@@ -50,7 +51,7 @@ void population() {
   lolY = appHeight * 6/30;
   lolWidth = appWidth * 1/3;
   lolHeight = appHeight * 1/5;
-  lolTextSize = 11;
+  lolTextSize = 15;
   //
 } //End population
 //
