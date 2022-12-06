@@ -4,6 +4,7 @@ void population() {
   float centerY = appHeight * 1/2;
   //
   pic = loadImage("../Images used/220824-andrew-tate-snip-ac-715p-87eb7e.jpg");
+  picII = loadImage("../Images used/1589861000Andrew_Tate.jpg");
   //
   rectFaceX =centerX - appHeight * 1/2 ;
   rectFaceY = appHeight * 0 ;
@@ -41,9 +42,15 @@ void population() {
   helpPlsFontSize = 15;
   //
   EnDITALLX = appWidth * 1/3;
-  EnDITALLY = appHeight * 5/30;
+  EnDITALLY = appHeight * 4/30;
   EnDITALLWidth = appWidth * 1/3;
   EnDITALLHeight = appHeight * 1/5;
+  //
+  lolX = appWidth * 1/3;
+  lolY = appHeight * 6/30;
+  lolWidth = appWidth * 1/3;
+  lolHeight = appHeight * 1/5;
+  lolTextSize = 11;
   //
 } //End population
 //

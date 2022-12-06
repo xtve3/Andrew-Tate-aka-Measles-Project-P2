@@ -21,6 +21,6 @@ color measlesColour;
    fill(resetWhite); //resetWhite = #FFFFFF;
    stroke(reset);
    //
-}//End andrewTate
+  }//End andrewTate
 //
 //end andrewTate subprogram
